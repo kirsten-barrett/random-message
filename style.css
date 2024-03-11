@@ -1,0 +1,18 @@
+html {
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    min-height: 900px;
+}
+p {
+    font-family: avenir;
+}
+.message-box {
+    background-color: #fff;
+    text-align: center;
+    width: 275px;
+    margin: 100px auto;
+    padding: 20px 60px;
+
+}

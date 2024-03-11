@@ -17,17 +17,22 @@ const message = arr => {
 }
 
 // Generate & return random ASCII face
-const faces = ['✧♡(◕‿◕✿)', '♥(ˆ⌣ˆԅ)', '(• ε •)', '┌( ಠ_ಠ)┘', '乁( ⁰͡ Ĺ̯ ⁰͡ ) ㄏ', '(•̀ᴗ•́)و ̑̑', '╰( ⁰ ਊ ⁰ )━☆ﾟ.*･｡ﾟ', '\ (•◡•) /'];
+const faces = ['✧♡(◕‿◕✿)', '♥(ˆ⌣ˆԅ)', '(• ε •)', '┌( ಠ_ಠ)┘', '(•̀ᴗ•́)و ̑̑', '╰( ⁰ ਊ ⁰ )━☆ﾟ.*･｡ﾟ', '\ (•◡•) /'];
 
 const face = arr => {
     let num = Math.floor(Math.random() * faces.length);
     return arr[num];
 }
 
-// Combine & print final message
+// Print final message to console
 const getFinalOutput = () => {
     console.log(`Today is ${day}, ${month} ${d.getDate()}, ${d.getFullYear()}`);
     console.log(message(messages));
     console.log(face(faces));
 }
 getFinalOutput();
+
+// Print message in HTML body
+document.getElementById('message1').innerHTML = `Today is ${day}, ${month} ${d.getDate()}, ${d.getFullYear()}`;
+document.getElementById('message2').innerHTML = message(messages);
+document.getElementById('message3').innerHTML = face(faces);
