@@ -11,8 +11,7 @@ p {
 .message-box {
     background-color: #fff;
     text-align: center;
-    width: 275px;
+    width: 80%;
     margin: 100px auto;
-    padding: 20px 60px;
-
+    padding: 20px;
 }
